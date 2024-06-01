@@ -63,7 +63,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR / 'pdf2text')],
+        'DIRS': [str(BASE_DIR / 'pdf2text' / 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
