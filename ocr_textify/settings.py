@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-v(!)y2fv58uges^ub#r9n!-oydq=2m%=tv!5b@-x&9lih9^+^t
 DEBUG = True
 
 # ALLOWED_HOSTS = ['10.64.241.30']
-ALLOWED_HOSTS = ['ocr-git-maneesh.apps.ocp4.example.com']
+ALLOWED_HOSTS = ['ocr-git-ocr.apps.ocp2.ksdc.in']
 
 # 
 
