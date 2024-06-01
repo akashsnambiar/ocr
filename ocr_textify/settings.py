@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-from pathlib import Path,os
+from pathlib import Path
 import site
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-v(!)y2fv58uges^ub#r9n!-oydq=2m%=tv!5b@-x&9lih9^+^t
 DEBUG = True
 
 # ALLOWED_HOSTS = ['10.64.241.30']
-ALLOWED_HOSTS = ['ocr-git-ocr.apps.ocp2.ksdc.in']
+ALLOWED_HOSTS = ['ocr-git-akash-ocr.apps.ocp2.ksdc.in']
 
 # 
 
@@ -57,6 +58,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ocr_textify.urls'
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -68,11 +71,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media',
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'ocr_textify.wsgi.application'
 
